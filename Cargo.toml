@@ -10,3 +10,11 @@ gfx = "=0.14.0"
 gfx_text = "=0.15.0"
 gfx_window_glutin = "=0.14.0"
 glutin = "=0.7.1"
+freetype = "=0.1.0"
+
+[build-dependencies]
+pkg-config = "0.3.19"
+
+[[bin]]
+name = "main"
+path = "bin/main.rs"

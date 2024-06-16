@@ -207,6 +207,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "freetype"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "06fb1d1136a04a5025b1d8465bbc0d1bd2bf19a4a9a7ce2017ff6ff68d02d4a8"
+
+[[package]]
 name = "freetype-rs"
 version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -701,10 +707,12 @@ checksum = "41cc0f7e4d5d4544e8861606a285bb08d3e70712ccc7d2b84d7c0ccfaf4b05ce"
 name = "rowser"
 version = "0.1.0"
 dependencies = [
+ "freetype",
  "gfx",
  "gfx_text",
  "gfx_window_glutin",
  "glutin",
+ "pkg-config",
 ]
 
 [[package]]

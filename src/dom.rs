@@ -78,7 +78,7 @@ impl fmt::Debug for ElementData {
   }
 }
 
-pub fn pretty_pting(n: &Node, indent_size: usize) {
+pub fn pretty_print(n: &Node, indent_size: usize) {
   let indent = (0..indent_size).map(|_| " ").collect::<String>();
 
   match n.node_type {
@@ -88,7 +88,7 @@ pub fn pretty_pting(n: &Node, indent_size: usize) {
   }
 
   for child in n.children.iter() {
-    pretty_pting(&child, indent_size + 2);
+    pretty_print(&child, indent_size + 2);
   }
 
   match n.node_type {
