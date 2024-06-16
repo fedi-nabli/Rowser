@@ -3,7 +3,7 @@ use crate::css::{Color, Declaration, Rule, Selector, SimpleSelector, StyleSheet,
 use std::iter::Peekable;
 use std::str::Chars;
 
-struct CssParser<'a> {
+pub struct CssParser<'a> {
   chars: Peekable<Chars<'a>>
 }
 
