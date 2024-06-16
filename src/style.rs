@@ -132,7 +132,7 @@ fn selector_matches(element: &ElementData, selector: &Selector) -> bool {
   false
 }
 
-fn pretty_print(node: &StyledNode, indent_size: usize) {
+pub fn pretty_print(node: &StyledNode, indent_size: usize) {
   let indent = (0..indent_size).map(|_| " ").collect::<String>();
   println!("{}{:?}", indent, node);
 
